@@ -14,7 +14,6 @@ const COLORS = {
     multi: "#3fae5a",     // зелёный
     rerun: "#9a9a9a",     // серый
     standard: "#175fb3",  // синий
-    promise: "#ecd86d",  //желтый
 };
 
 const hashString = (str) => {
