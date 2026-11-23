@@ -721,7 +721,6 @@ export const ru = {
       hintRed: "Красный - Сайлус",
       hintOrange: "Оранжевый - Калеб",
       hintGreen: "Зеленый - Мультибаннер",
-      hintYellow: "Желтый - Промис",
       hintDarkBlue: "Синий - баннер со стандартными картами",
       hintRafaelBirthday: "01 марта - 08 марта - День рождения Рафаеля",
       hintSilusBirthday: "13 апреля - 20 апреля - День рождения Сайлуса",

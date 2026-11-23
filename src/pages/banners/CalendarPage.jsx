@@ -158,7 +158,6 @@ function CalendarPage() {
           <p>{t("CalendarPage.hintOrange")}</p>
           <p>{t("CalendarPage.hintGreen")}</p>
           <p>{t("CalendarPage.hintDarkBlue")}</p>
-          <p>{t("CalendarPage.hintYellow")}</p>
           <br />
           <p>{t("CalendarPage.hintRafaelBirthday")}</p>
           <p>{t("CalendarPage.hintSilusBirthday")}</p>
