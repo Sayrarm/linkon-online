@@ -1388,7 +1388,7 @@ export const eventsData = [
     image: "../assets/events/plushie/fussy-kitty.png",
     cardIds: [],
     startDate: "2025-03-17T05:00:00",
-    endDate: "2025-03-23T04:59:59",
+    endDate: "2025-03-30T04:59:59",
     rerun: false,
     active: false,
     type: "plushie",
