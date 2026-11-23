@@ -1114,4 +1114,15 @@ export const bannersDataFull = [
     active: true,
     type: "solo",
   },
+  {
+    id: 101,
+    name: "Yes, Cat Caretaker",
+    image: "../assets/banners/yes-cat-caretaker.png",
+    cardIds: [180, 276, 372, 86],
+    startDate: "2026-11-25T05:00:00",
+    endDate: "2026-12-03T04:59:00",
+    rerun: true,
+    active: true,
+    type: "multi",
+  },
 ];
