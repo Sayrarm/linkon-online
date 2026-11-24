@@ -129,7 +129,7 @@ export const obtainData = [
     obtain: "10 Days With You",
     memories: [
       224, 319, 133, 61, 241, 337, 147, 11, 67, 153, 247, 343, 15, 70, 346, 399,
-      401, 419, 428,
+      401, 419, 428, 440
     ],
     description:
       "Log In Event. After the end of the event, the Memory ends up in Galaxy Explorer",
@@ -173,7 +173,7 @@ export const obtainData = [
   },
   {
     obtain: "Branch Event",
-    memories: [274, 371, 181, 422],
+    memories: [274, 371, 181, 422, 439],
     description:
       "Event during the branch story. After the end of the event, the Memory ends up in Wishing Well",
     image: "../assets/main-page/modal-window/events.png",

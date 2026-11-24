@@ -317,7 +317,7 @@ export const eventsData = [
     image: "../assets/events/10-days/zayne-20.png",
     cardIds: [440],
     startDate: "2026-11-25T05:00:00",
-    endDate: "2026-11-13T04:59:59",
+    endDate: "2026-12-13T04:59:59",
     rerun: false,
     active: true,
     type: "10-days-with-you",
