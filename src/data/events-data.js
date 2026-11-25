@@ -321,7 +321,7 @@ export const eventsData = [
     rerun: false,
     active: true,
     type: "10-days-with-you",
-    link: "",
+    link: "https://loveanddeepspace.wiki.gg/wiki/10_Days_With_You_(Zayne:_Sips_of_Sweetness)",
     text: "Log In to claim new 4* Memory",
   },
   {
@@ -3347,7 +3347,7 @@ export const eventsData = [
     rerun: false,
     active: true,
     type: "plushie",
-    link: "",
+    link: "https://loveanddeepspace.wiki.gg/wiki/Spring_Hamster_Drop_Rate_Up",
     text: "New plushie",
   },
   {
@@ -3360,13 +3360,13 @@ export const eventsData = [
     rerun: false,
     active: true,
     type: "branch-event",
-    link: "",
+    link: "https://loveanddeepspace.wiki.gg/wiki/Peril_Forth",
     text: "Branch event",
   },
   {
     id: 218,
-    name: "Pawyage Series",
-    image: "../assets/events/kitti-tokens/pawyage-series.png",
+    name: "Travel Series",
+    image: "../assets/events/kitti-tokens/travel-series.png",
     cardIds: [],
     startDate: "2026-11-30T05:00:00",
     endDate: "2026-12-21T04:59:59",
@@ -3386,7 +3386,7 @@ export const eventsData = [
     rerun: false,
     active: true,
     type: "event",
-    link: "",
+    link: "https://loveanddeepspace.wiki.gg/wiki/Warmth_Entwined",
     text: "New clothes in the store",
   },
 ];
