@@ -768,4 +768,12 @@ True to her Evol, she excels at modifying weapons and equipment, though these mo
     content: `A secret observation fortress situated on an isolated island in international waters, built like a steel citadel and operating long beyond conventional oversight. Its interior is divided into multiple halls, each using specialized systems to monitor and restrict high-risk Evolvers. Administrators oversee the daily inspection and governance of their respective domains.
 `,
   },
+  {
+    id: 77,
+    navigation: "note",
+    title: "Astral Enforcer",
+    img: "",
+    content: `A specialized organization active across interstellar space. Sylus appears to have long occupied the top of their highest-priority pursuit list, a key target the organization has never ceased hunting.
+`,
+  },
 ];
