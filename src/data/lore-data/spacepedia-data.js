@@ -638,7 +638,10 @@ They often wear masks that conceal their faces, so it's difficult to tell the tw
     navigation: "note",
     title: "Mephisto",
     img: "../assets/sp/mephisto.png",
-    content: `A mechanical crow that always accompanies Sylus. He's very skilled but has a temper. Sylus doesn't treat him as a pet.    
+    content: `A mechanical crow that always accompanies Sylus. He's very skilled but has a temper. Sylus doesn't treat him as a pet.  
+      
+<span>Raydiorvid</span>
+A massive black bird from the distant past, said to migrate along the paths of stars. Could it be what Mephisto once was...?
 `,
   },
   {
@@ -741,12 +744,28 @@ True to her Evol, she excels at modifying weapons and equipment, though these mo
 `,
   },
   {
-    id: 73,
+    id: 74,
     navigation: "tale",
     title: "Project Noctcael",
     img: "",
     content: `The earliest Deepspace exploration program. It once gathered the most brilliant minds and cutting-edge technology of its time.
 "Norn," later repurposed by EVER as the Toring Chip's control hub, was also born from this project. However, the mission vessel lost all contact within the Deepspace Tunnel, and no one knows what became of its crew.
+`,
+  },
+  {
+    id: 75,
+    navigation: "message",
+    title: "The Black Door",
+    img: "",
+    content: `A unique spatial device located in Lymbo's central control level, resembling a black door. It appears to connect to the Deepspace Tunnel,offering glimpses into different spacetimes as if it were a gateway to countless unknown worlds.
+`,
+  },
+  {
+    id: 76,
+    navigation: "tale",
+    title: "Lymbo",
+    img: "",
+    content: `A secret observation fortress situated on an isolated island in international waters, built like a steel citadel and operating long beyond conventional oversight. Its interior is divided into multiple halls, each using specialized systems to monitor and restrict high-risk Evolvers. Administrators oversee the daily inspection and governance of their respective domains.
 `,
   },
 ];
