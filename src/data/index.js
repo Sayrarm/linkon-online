@@ -85,7 +85,9 @@ export {
   computeKitDamage,
   detectDamageType,
   findCompanionData,
-  findWeaponData
+  findWeaponData,
+  findFullCompanionData,
+  buildSkillDetailsMap,
 } from "./calculator-data/kitDamageFunctions.js";
 export {
   getAvailableProtocores
