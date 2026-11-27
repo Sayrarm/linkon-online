@@ -136,6 +136,13 @@ function KitCombatTable({
   return (
     <section className={styles.kitCombatTableContainer}>
       <table className={styles.statsTable}>
+        <colgroup>
+          <col style={{ width: "30%" }} />
+          <col style={{ width: "10%" }} />
+          <col style={{ width: "10%" }} />
+          <col style={{ width: "10%" }} />
+          <col style={{ width: "30%" }} />
+        </colgroup>
         <thead>
           <tr>
             <th className={styles.titleSkill}></th>

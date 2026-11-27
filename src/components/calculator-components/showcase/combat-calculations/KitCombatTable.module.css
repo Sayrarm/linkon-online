@@ -47,6 +47,7 @@
 .detailsContent {
     text-align: left;
     line-height: 1.6;
+    white-space: pre-wrap;
 }
 
 @media screen and (max-width: 500px) {
