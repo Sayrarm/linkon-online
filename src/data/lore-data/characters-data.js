@@ -65,7 +65,12 @@ export const charactersData = [
       "Light Into Dust",
       "The Little Prince's Gift",
     ],
-    anecdotes: ["A Special Vacation", "Passing By", "When Shooting Stars Fall", "Echoes of the Ruins"],
+    anecdotes: [
+      "A Special Vacation",
+      "Passing By",
+      "When Shooting Stars Fall",
+      "Echoes of the Ruins",
+    ],
   },
   {
     link: "zayne",
@@ -147,7 +152,12 @@ export const charactersData = [
       "Dusk To Autumn",
       "Good Night, Frostmere",
     ],
-    anecdotes: ["A Pure White Heart", "Never-Ending Winter", "Still In Dark", "What Gives Life Weight"],
+    anecdotes: [
+      "A Pure White Heart",
+      "Never-Ending Winter",
+      "Still In Dark",
+      "What Gives Life Weight",
+    ],
   },
   {
     link: "rafayel",
@@ -204,7 +214,12 @@ export const charactersData = [
       "Bucket List",
       "A Fairy Tale",
     ],
-    anecdotes: ["A Unique Vermillion", "Addictive Pain", "Siren's Song", "That Painting"],
+    anecdotes: [
+      "A Unique Vermillion",
+      "Addictive Pain",
+      "Siren's Song",
+      "That Painting",
+    ],
   },
   {
     link: "sylus",
@@ -241,6 +256,16 @@ export const charactersData = [
         serialNumber: "02",
         subtitle: "All From Deepspace",
       },
+      {
+        title: "Erratic Flux",
+        serialNumber: "03",
+        subtitle: "Abyssal Recall",
+      },
+      {
+        title: "Erratic Flux",
+        serialNumber: "04",
+        subtitle: "Beyond All Borders",
+      },
     ],
     bond_1: {
       link: "https://youtu.be/RQzSh_gZOdk",
@@ -255,10 +280,7 @@ export const charactersData = [
     char: "Caleb",
     img: "../assets/companions/caleb_pilot.png",
     mainStory: [
-      { title: "Under Deepspace",
-        serialNumber: "01",
-        subtitle: "To Begin"
-      },
+      { title: "Under Deepspace", serialNumber: "01", subtitle: "To Begin" },
       {
         title: "Under Deepspace",
         serialNumber: "04",
