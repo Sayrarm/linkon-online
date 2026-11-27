@@ -1,6 +1,11 @@
 import { useMemo, useState, Fragment } from "react";
 import styles from "./KitCombatTable.module.css";
-import { findCompanionData, findWeaponData, computeKitDamage } from "@data";
+import {
+  findCompanionData,
+  findWeaponData,
+  computeKitDamage,
+  compData,
+} from "@data";
 
 function KitCombatTable({
   stats,
@@ -56,6 +61,89 @@ function KitCombatTable({
     ],
   );
 
+  const fullCompanion = useMemo(() => {
+    if (!companionData) return null;
+    return (
+      compData.find(
+        (c) =>
+          c.companionName === companionData.companionName &&
+          // для weapon-специфичных данных тоже проверяем weaponName
+          (c.weaponName === weaponData?.weaponName || !weaponData),
+      ) || null
+    );
+  }, [companionData, weaponData]);
+
+  const getSkillDetails = (rowKey) => {
+    if (!fullCompanion) return null;
+
+    switch (rowKey) {
+      // ── Companion skills ──
+      case "support":
+        return fullCompanion.supportSkillText;
+      case "empoweredSupport":
+      case "empoweredSupport2":
+        // в compData нет отдельного поля под empowered — берём из supportSkillText
+        // (там описано "[Empowered] Royal Seal: ...")
+        return fullCompanion.supportSkillText;
+      case "support2":
+      case "support3":
+        // «Support Skill Additional» — тоже часть supportSkillText
+        return fullCompanion.supportSkillText;
+      case "resonance":
+      case "resonance2":
+        return fullCompanion.resonanceSkillText;
+      case "ardentOath":
+        return fullCompanion.ardentOathText;
+
+      // ── Passive (Companion) ──
+      case "passive1":
+      case "passive2":
+      case "passive3":
+      case "passive4":
+      case "passive5":
+        return fullCompanion.passiveSkillText;
+
+      // ── Sync Skill (basic sync) ──
+      // В compData описания sync-ударов нет отдельным полем.
+      // Если появится — добавьте case сюда. Пока возвращаем null,
+      // чтобы показать fallback.
+      case "sync1":
+      case "sync2":
+      case "sync3":
+      case "sync4":
+      case "syncCharged":
+        return fullCompanion.syncSkillText || null;
+
+      // ── Sync Active Skill ──
+      // Тоже нет отдельного поля в compData.
+      case "activeI":
+      case "activeII":
+      case "activeII2":
+      case "activeIII":
+      case "activeIII2":
+        return fullCompanion.syncActiveSkillText || null;
+
+      // ── Weapon (MC) ──
+      case "basic1":
+      case "basic2":
+      case "basic3":
+      case "basic4":
+      case "basic5":
+      case "basicTotal":
+      case "basicCharged":
+      case "basicCharged2":
+        return fullCompanion.basicAttackText;
+      case "active1":
+      case "active2":
+        return fullCompanion.activeSkillText;
+      case "passiveMC":
+        return fullCompanion.passiveMCText;
+
+      default:
+        return null;
+    }
+  };
+
   const roundDisplay = (value) => Math.round(value);
 
   /**
@@ -73,9 +161,14 @@ function KitCombatTable({
     weak,
     crit,
     formula,
-    details,
+    details, // оставляем как fallback
   }) => {
     const isExpanded = expandedRows.has(rowKey);
+
+    // приоритет: compData → переданный details → заглушка
+    const resolvedDetails =
+      getSkillDetails(rowKey) || details || "Нет описания";
+
     return (
       <Fragment key={rowKey}>
         <tr
@@ -92,7 +185,9 @@ function KitCombatTable({
           }}
         >
           <th>
-            <span className={styles.expandIcon}>{isExpanded ? "▾ " : "▸ "}</span>
+            <span className={styles.expandIcon}>
+              {isExpanded ? "▾ " : "▸ "}
+            </span>
             {label}
           </th>
           <td>{roundDisplay(base)}</td>
@@ -100,10 +195,10 @@ function KitCombatTable({
           <td>{roundDisplay(crit)}</td>
           <td>{formula || "—"}</td>
         </tr>
-        {isExpanded && details && (
+        {isExpanded && resolvedDetails && (
           <tr className={styles.detailsRow}>
             <td colSpan={5}>
-              <div className={styles.detailsContent}>{details}</div>
+              <div className={styles.detailsContent}>{resolvedDetails}</div>
             </td>
           </tr>
         )}

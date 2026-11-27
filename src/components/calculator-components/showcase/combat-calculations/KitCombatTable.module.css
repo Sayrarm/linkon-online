@@ -44,6 +44,11 @@
     background: rgb(165 165 165 / 0.2);
 }
 
+.detailsContent {
+    text-align: left;
+    line-height: 1.6;
+}
+
 @media screen and (max-width: 500px) {
 
     .statsTable td,
