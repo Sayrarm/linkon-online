@@ -22,11 +22,11 @@ import {
     findCardForProtocore,
 } from "@localstorage";
 import {
-    calculateTeamStats,
-    computeKitDamage,
-    detectDamageType,
-    buildOptimizationResults,
-    memoriesData
+  calculateTeamStats,
+  computeKitDamage,
+  detectDamageType,
+  buildOptimizationResults,
+  memoriesData,
 } from "@data";
 import {getImageUrl, useSolarPair} from "@hooks";
 import { useTranslation } from "react-i18next";
