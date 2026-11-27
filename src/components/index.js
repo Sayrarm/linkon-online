@@ -20,7 +20,7 @@ export { HighlightProvider, useHighlight } from "./calculator-components/showcas
 export { default as CombatCalculations } from "./calculator-components/showcase/combat-calculations/CombatCalculations.jsx";
 export { default as TablePairBonus } from "./calculator-components/showcase/combat-calculations/TablePairBonus.jsx";
 export { default as AdditionalBonus } from "./calculator-components/showcase/combat-calculations/AdditionalBonus.jsx";
-export { default as KitCombatTable } from "./calculator-components/common/KitCombatTable.jsx";
+export { default as KitCombatTable } from "./calculator-components/showcase/combat-calculations/KitCombatTable.jsx";
 
 export { default as TeamOptimizer } from "./calculator-components/optimizer/TeamOptimizer.jsx";
 export { default as StatsComparisonTable } from "./calculator-components/optimizer/StatsComparisonTable.jsx";
