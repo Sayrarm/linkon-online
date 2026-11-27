@@ -675,7 +675,7 @@ True to her Evol, she excels at modifying weapons and equipment, though these mo
     id: 65,
     navigation: "note",
     title: "Ulysses",
-    img: "",
+    img: "../assets/sp/ulysses.png",
     content: `An old friend of Xavier, currently an associate professor of astrophysics at Prestara University    
 `,
   },
